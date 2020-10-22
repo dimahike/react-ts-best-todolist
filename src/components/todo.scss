@@ -1,0 +1,55 @@
+@import '../variables.scss';
+
+.todo {
+  margin: 7px 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #c1c1c1;
+  .main {
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+
+    .left {
+      display: flex;
+      margin-right: 15px;
+      align-items: center;
+      .primordial {
+        transform: rotate(90deg);
+        display: flex;
+        width: 15px;
+        height: 15px;
+        justify-content: center;
+        align-items: center;
+      }
+      .rotared {
+        transform: rotate(180deg);
+      }
+    }
+    .right {
+      .task {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .extra {
+    margin-top: 15px;
+    padding: 7px 12px;
+    background-color: $mainWhite;
+    .decription {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .date span {
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+  }
+
+  @media only screen and (max-width: $bgScreen) {
+  }
+  @media only screen and (max-width: $mdScreen) {
+  }
+
+  @media only screen and (max-width: $smScreen) {
+  }
+}

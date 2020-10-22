@@ -1,0 +1,55 @@
+@import '../variables.scss';
+
+.state {
+  margin-left: 7px;
+  // border: 2px solid black;
+  width: 100px;
+  min-height: 28px;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+
+  .active {
+    font-weight: bold;
+    color: #fff;
+  }
+  .sort-state {
+    // padding: 2px 0;
+    color: #fff;
+    .active-state {
+      color: #fff;
+      font-weight: bold;
+    }
+    .select-state {
+      li {
+        border: 1px solid black;
+        min-height: 28px;
+      }
+      .li-processing:hover {
+        background-color: #81b214;
+      }
+      .li-delay:hover {
+        background-color: #ff9000;
+      }
+      .li-ready:hover {
+        background-color: #008000;
+      }
+      .li-cancel:hover {
+        background-color: #ff0000;
+      }
+    }
+  }
+}
+
+.processing {
+  background-color: #81b214;
+}
+.delay {
+  background-color: #ff9000;
+}
+.ready {
+  background-color: #008000;
+}
+.cancel {
+  background-color: #ff0000;
+}

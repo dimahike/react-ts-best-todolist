@@ -1,0 +1,64 @@
+@import '../../variables.scss';
+
+$btnMainGreen: #81b214;
+$btnDarkGreen: #425e01;
+
+$btnMainOrange: #ee6f57;
+$btnDarkOrange: #911d08;
+
+.btn {
+  margin-left: 15px;
+  width: 100px;
+  height: 40px;
+  align-self: center;
+  border-radius: 1.2rem;
+  border: 2px solid #000;
+  background-color: #fff;
+  font-weight: bold;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.btn-sm {
+  margin-left: 10px;
+  width: 80px;
+  height: 30px;
+  align-self: center;
+  border: 2px solid #000;
+  background-color: #fff;
+  font-weight: bold;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+.btn-green {
+  border: 2px solid $btnMainGreen;
+  background-color: $btnMainGreen;
+  color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: $btnDarkGreen;
+    -webkit-box-shadow: 0px 0px 10px 0px $btnMainGreen;
+    -moz-box-shadow: 0px 0px 10px 0px $btnMainGreen;
+    box-shadow: 0px 0px 10px 0px $btnMainGreen;
+  }
+}
+
+.btn-danger {
+  border: 2px solid $btnMainOrange;
+  background-color: $btnMainOrange;
+  color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: $btnDarkOrange;
+    -webkit-box-shadow: 0px 0px 10px 0px $btnMainOrange;
+    -moz-box-shadow: 0px 0px 10px 0px $btnMainOrange;
+    box-shadow: 0px 0px 10px 0px $btnMainOrange;
+  }
+}

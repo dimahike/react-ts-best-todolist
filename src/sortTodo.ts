@@ -1,0 +1,1 @@
+export const sortTodo: string[] = ['all', 'processing', 'delay', 'ready', 'cancel'];

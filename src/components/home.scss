@@ -1,0 +1,19 @@
+@import '../variables.scss';
+
+#home {
+  min-height: 50vh;
+  padding: 5% 7%;
+  @media only screen and (max-width: $bgScreen) {
+    padding: 4% 6%;
+  }
+  @media only screen and (max-width: $mdScreen) {
+    padding: 3% 5%;
+  }
+  @media only screen and (max-width: $smScreen) {
+    padding: 2% 4%;
+  }
+  .home-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

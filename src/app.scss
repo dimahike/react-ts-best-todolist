@@ -1,0 +1,50 @@
+@import './variables.scss';
+@import './normalize.scss';
+
+body {
+  background: $mainWhite !important;
+  color: $mainDark !important;
+  font-family: 'Crimson Text', serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  padding: 5% 10%;
+  @media only screen and (max-width: $bgScreen) {
+    padding: 5% 8%;
+  }
+  @media only screen and (max-width: $mdScreen) {
+    padding: 4% 6%;
+  }
+  @media only screen and (max-width: $smScreen) {
+    padding: 0;
+  }
+}
+
+.paper {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  @media only screen and (max-width: $smScreen) {
+    border-radius: 0;
+  }
+}
+
+.display {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-i-c {
+  align-items: center;
+}
+
+.just-c-bs {
+  justify-content: space-between;
+}
